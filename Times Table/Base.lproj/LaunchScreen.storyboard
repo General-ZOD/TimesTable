@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know Ya Tables " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coD-wh-Pnl">
+                                <rect key="frame" x="45" y="20" width="285" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="FnP-4S-gbt"/>
+                                    <constraint firstAttribute="height" constant="110" id="hwZ-vd-D2n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <color key="textColor" red="0.22907927852348992" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tables.png" translatesAutoresizingMaskIntoConstraints="NO" id="kbN-FU-EqZ">
+                                <rect key="frame" x="31" y="157" width="313" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="2kp-h6-hBs"/>
+                                    <constraint firstAttribute="height" constant="264" id="IgS-iz-c8N"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Your tables. Select a number from 1 to 12 and the first 50 multiplication values will be displayed. Enjoy!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVj-P8-4RC">
+                                <rect key="frame" x="-4" y="458" width="383" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="Yra-4f-rdA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="coD-wh-Pnl" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="6Ox-qY-1O6"/>
+                            <constraint firstItem="ZVj-P8-4RC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="ED6-QE-y4L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZVj-P8-4RC" secondAttribute="trailing" constant="-20" id="FWN-v7-Lip"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZVj-P8-4RC" secondAttribute="bottom" constant="36" id="Klj-Rt-u3P"/>
+                            <constraint firstItem="ZVj-P8-4RC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="irZ-gp-TmJ"/>
+                            <constraint firstItem="kbN-FU-EqZ" firstAttribute="top" secondItem="coD-wh-Pnl" secondAttribute="bottom" constant="27" id="k3o-Yg-bs4"/>
+                            <constraint firstItem="coD-wh-Pnl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="un6-db-ITJ"/>
+                            <constraint firstItem="kbN-FU-EqZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yVg-N9-tdE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tables.png" width="300" height="260"/>
+    </resources>
+</document>
